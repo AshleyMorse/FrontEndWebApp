@@ -1,0 +1,156 @@
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+	background: #E2F0CB;
+	font-family: "Verdana";
+	font-size: 12px;
+	padding: 10px;
+}
+
+h1.menu {
+	text-align: center;
+	font-family: "Verdana";
+	font-size: 175%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+h1.categories {
+  	text-align: left;
+  	font-family: "Lucida Console";
+  	font-size: 125%;
+  	margin: 10px;
+}
+
+h2 {
+	font-size: 150%;
+	text-align: center;
+	border: 1px solid black;
+	float: right;
+	margin-top: -1px;
+	margin-bottom: 10px;
+	padding: 5px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+p {
+	position: relative;
+	padding: 10px;
+	padding-top: 40px;
+}
+
+.content-box {
+	border: 1px solid black;
+	position: relative;
+	background-color: #FFDAC1;
+	margin: 10px;
+	max-height: 150px;
+	overflow: hidden;
+}
+
+.content-box:hover {
+	overflow: auto;
+}
+
+.chicken {
+	background-color: #C9C1E7;
+}
+
+.chicken-mobile {
+	background-color: #C9C1E7;
+}
+
+.beef {
+	background-color: #FF9AA2;
+}
+
+.beef-mobile {
+	background-color: #FF9AA2;
+}
+
+.sushi {
+	background-color: #BDD5EF;
+}
+
+.sushi-mobile {
+	background-color: #BDD5EF;
+}
+
+/********** Desktop View **********/
+@media (min-width: 992px) {
+  h1.categories {
+  	display: none;
+  }
+  .section-box {
+    width: 33.33%;
+    float: left;
+  }
+  .chicken-mobile {
+  	display: none;
+  }
+  .beef-mobile {
+  	display: none;
+  }
+  .sushi-mobile {
+  	display: none;
+  } 
+}
+
+/********** Tablet View **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  h1.categories {
+  	display: none;
+  }
+  .section-box {
+    width: 50%;
+    float: left;
+  }
+  .bottom {
+  	width: 100%;
+    float: left;
+  }
+  .chicken-mobile {
+  	display: none;
+  }
+  .beef-mobile {
+  	display: none;
+  }
+  .sushi-mobile {
+  	display: none;
+  } 
+}
+
+/********** Mobile View **********/
+@media (max-width: 767px) {
+  h1.menu {
+  	display: none;
+  }
+  .section-box {
+    width: 100%;
+    float: left;
+  }
+  .chicken-mobile {
+  	width: 100%;
+  }
+  .beef-mobile {
+  	width: 100%;
+  }
+  .sushi-mobile {
+  	width: 100%;
+  } 
+  .chicken {
+  	display: none;
+  }
+  .beef {
+  	display: none;
+  }
+  .sushi {
+  	display: none;
+  } 
+}
