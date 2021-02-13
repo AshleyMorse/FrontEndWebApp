@@ -23,10 +23,6 @@ body {
   border-top: solid 1px;
 }
 
-#page-header {
-  color: #ffc478;
-}
-
 #section-chicken, #section-beef, #section-sushi {
   background-color: #bbdfc8;
   padding-bottom: 10px;
