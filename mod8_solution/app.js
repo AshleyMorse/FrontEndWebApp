@@ -62,7 +62,7 @@
 					var menuItems = result.data.menu_items;
 
 					for (var i = 0; i < menuItems.length; i++) {
-						if (menuItems[i].description.includes(searchTerm) && menuItems.length > 0) {
+						if (menuItems[i].description.includes(searchTerm) && searchTerm != "") {
 							foundItems.push({
 								name: menuItems[i].name,
 								shortName: menuItems[i].short_name,
