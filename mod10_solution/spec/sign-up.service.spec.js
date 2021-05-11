@@ -23,6 +23,7 @@ describe('menuItem', function () {
   });
 
   it('should not be found in menu', function() {
+    // help from https://stackoverflow.com/a/23736339
     $httpBackend.expectGET(ApiPath + '/menu_items/CU99.json').respond('ERROR');
     menuItem.getMenuItem("CU99").then(function(response) {
       expect(response).toEqual('ERROR');
