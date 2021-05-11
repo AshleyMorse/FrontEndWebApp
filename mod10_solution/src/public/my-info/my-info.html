@@ -1,0 +1,26 @@
+<div class="container">
+  <h2 class="text-center">My Info</h2>
+  <div class="text-center" ng-if="myInfoCtrl.loadedInfo.firstName == ''">
+    Not Signed Up Yet, <a ui-sref="public.signup"> Sign up Now! </a>
+  </div>
+  <div ng-if="myInfoCtrl.loadedInfo.firstName != ''">
+    <br>
+    <b>First Name:</b> {{ myInfoCtrl.loadedInfo.firstName }}
+    <br>
+    <b>Last Name:</b> {{ myInfoCtrl.loadedInfo.lastName }}
+    <br>
+    <b>Email:</b> {{ myInfoCtrl.loadedInfo.email }}
+    <br>
+    <b>Phone:</b> {{ myInfoCtrl.loadedInfo.phone }}
+    <br>
+    <br>
+    <b>Favorite Menu Item</b>
+    <br>
+    <b>Title:</b> {{ myInfoCtrl.loadedInfo.menuItem.name }}
+    <br>
+    <b>Description:</b> {{ myInfoCtrl.loadedInfo.menuItem.description }}
+    <br>
+    <br>
+    <img ng-src="{{ myInfoCtrl.imagePath }}{{ myInfoCtrl.loadedInfo.menuItem.short_name }}.jpg"></img>
+  </div>
+</div>
